@@ -55,6 +55,10 @@ export function paginate(
 export function paginate(
   data: PaginationData | undefined,
   options?: Partial<PaginationOptions>
+): Pagination
+export function paginate(
+  data: PaginationData | undefined,
+  options?: any
 ): Pagination {
   const p: Pagination = {
     page: 1,
