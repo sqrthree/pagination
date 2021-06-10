@@ -44,6 +44,7 @@ export interface CursorBasedPagination {
   limit: number
 }
 
+export function paginate(data: PaginationData): Pagination
 export function paginate(
   data: PaginationData,
   options?: Merge<Partial<PaginationOptions>, { page: true }>
